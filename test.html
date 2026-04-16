@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Future Archaeology Bureau</title>
+</head>
+<body>
+    <h1>Test Page</h1>
+    <div id="output"></div>
+
+    <script src="data.js"></script>
+    <script>
+        document.getElementById('output').innerHTML =
+            `mockRelics defined: ${typeof mockRelics !== 'undefined'}<br>
+             mockRelics length: ${mockRelics ? mockRelics.length : 0}<br>
+             categories defined: ${typeof categories !== 'undefined'}<br>
+             categories length: ${categories ? categories.length : 0}`;
+    </script>
+</body>
+</html>
